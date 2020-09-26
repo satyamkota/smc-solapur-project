@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- bootstrap files -->
 	<link rel="stylesheet" href="Bootstrap files/CSSonly.css">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
 	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
 
 	  <style>
@@ -24,11 +24,37 @@
 	  .color{
 	  	border-top:5px solid gray;
 	  }
+	  .v1{
+	  	border-left: 6px solid gray;
+	  	height: auto;
+	  	left: 0%;
+	  	margin-left: -3px;
+	  	top: 0; 
+	  }
 	 
 	  </style>
     
 </head>
-<body>
+<body style="background-color: #cccccc;">
+<!-- <body style="background-image: url(images/bg.jpg);"> -->
+	<script type="text/javascript">
+		function readmore() {
+		  var dots = document.getElementById("dots");
+		  var moreText = document.getElementById("more");
+		  var btnText = document.getElementById("myBtn");
+
+		  if (dots.style.display === "none") {
+		    dots.style.display = "inline";
+		    btnText.innerHTML = "Read more";
+		    moreText.style.display = "none";
+		  } else {
+		    dots.style.display = "none";
+		    btnText.innerHTML = "Read less";
+		    moreText.style.display = "inline";
+		  }
+		}
+
+	</script>
 
 	<!-- <h1 class=" text-center text-success text-capitalize font-weight-bold "> welcome to my channel</h1> -->
 
@@ -50,8 +76,8 @@
 			      </li>
 				      <li class="nav-item dropdown">
 				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Smart City
-			        </a>
+			         		 Smart City
+			        	</a>
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			          <a class="dropdown-item" href="https://drive.google.com/file/d/1jn9a9zV5a_2v0czQ6C7OyjPjedyKMa0h/view?usp=sharing" target="_blank">Area Calculation</a>
 			          <a class="dropdown-item" href="https://drive.google.com/file/d/1KdbSJ5RsA5_MVoMIhnFpGR3KzdMb-wjr/view?usp=sharing" target="_blank">LA Drawing Detail</a>
@@ -59,6 +85,7 @@
 			          <a class="dropdown-item" href="#">Other</a>
 			        </div>
 			      </li>
+
 			      <li class="nav-item">
 			        <a class="nav-link" href="contactus.html">Contact Us</a>
 			      </li>
@@ -74,7 +101,7 @@
 		<!-- navbar end -->
 	<!-- carousel start -->
 	<header>
-		<div id="demo" class="carousel slide px-2 pt-5" data-ride="carousel" data-interval="1500">
+		<div id="demo" class="carousel slide px-2 pt-5" data-ride="carousel" data-interval="2500">
 		  <ul class="carousel-indicators">
 		    <li data-target="#demo" data-slide-to="0" class="active"></li>
 		    <li data-target="#demo" data-slide-to="1"></li>
@@ -165,14 +192,19 @@
 
 			<div class="row mb-5">
 				<div class="col-lg-6 col-md-6 col-12">
-					<img src="images/smc2.jpg" class="img-fluid img-thumbnail">
+					<img style="border-radius: 50%" src="images/smc2.jpg" class="img-fluid img-thumbnail">
 				</div>
 				<div class="col-lg-6 col-md-6 col-12">
 					<h1>Solapur Municipal Corporation</h1>
 					<hr>
-					<p><h5>The Solapur Municipal Corporation is the governing body of the city of Solapur in the Indian state of Maharashtra. The municipal corporation consists of democratically elected members, is headed by a mayor and administers the city's infrastructure, public services and police. Members from the state's leading various political parties hold elected offices in the corporation. solapur municipality is one of the oldest in India founded in the 1860s and was given municipal corporation status in 1963. Solapur municipal corporation is located in Solapur.</h5></p>
-					<!-- <button class="btn bg-primary text-white text-caitalize">know More</button> -->
-					<a href="https://drive.google.com/file/d/16CU7L_eqUnz7vFpYLCOlXU8HhTvNE6zi/view?usp=sharing" target="_blank">Know More...</a>
+					<p>The Solapur Municipal Corporation is the governing body of the city of Solapur in the Indian state of Maharashtra. The municipal corporation consists of democratically elected members, is headed by a mayor and administers the city's infrastructure, public services and police. Members from the state's leading various political parties hold elected offices in the corporation. solapur municipality is one of the oldest in India founded in the 1860s and was given municipal corporation status in 1963. Solapur municipal corporation is located in Solapur<span id="dots">...</span> <span id="more" style="display: none;"> Solapur is Southern Maharashtra's one of the major city and Solapur District's administrative
+					headquarter. The city is famous for textile manufacturing. In Bidi manufacturing the city is in
+					among top spot.The city is also famous for Solapur Chadars. 68 Shivlinga and Ashtavinayaks
+					founded by Shri Siddharameshwar an ancient inhabitant of Solapur city. They built the
+					Solapur lake in Solapur city and it resulted in resolved the water problem. The city is
+					established on the north-south railway root and the root is most important root in India.</span></p>
+					<button class="btn bg-primary text-white text-caitalize" onclick="readmore()" id="myBtn">Read More</button>
+					<!-- <a href="https://drive.google.com/file/d/16CU7L_eqUnz7vFpYLCOlXU8HhTvNE6zi/view?usp=sharing" target="_blank">Know More...</a> -->
 				</div>
 				
 			</div>
@@ -274,7 +306,7 @@
 			<h1 class="text-center text-capitalize pt-5">gallery</h1>
 			<hr class="w-25 mx-auto pt-5">
 
-			<div class="row text-center ">
+			<div class="row text-center">
 
 				<div class="col-sm-3 col-sm-3 col-12 mb-4">
 					<img src="images/pk1a.jpg" class="img-fluid img-thumbnail">
@@ -734,23 +766,23 @@
 			<hr class="color">
 			<!-- <hr class="w-100 border"> -->
 
-				<div class="row mb-5">
+				<div class="row mx-5 container-fluid">
 					<div class="col-lg-6 col-md-6 col-12">
 						<p class="text-center">
-							<h3 class="text-center">CONTACT US</h3>
-							<hr class="w-25 mx-auto ">
+							<h3 class="text-center">VISIT US</h3>
+							<hr class="w-25 mx-auto" >
 							Solapur Municipal Corporation,<br>
 							Indrabhuwan, Ambedkar Chowk, Railway Lines,<br>
 							Solapur-413001.<br>
 							Maharashtra, India.
 						</p>
 					</div>
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="col-lg-6 col-md-6 col-12 v1">
 						<p class="text-center">
 							<h3 class="text-center">CONTACT NUMBERS</h3>
 							<hr class="w-25 mx-auto">
-							<!-- <a href="..\SMC Project\department.pdf" target="_blank">Department Contact No's</a><br> -->
 							<a href="https://drive.google.com/file/d/1qtG-cRG63vJzYd0oDMK4lc51sTjcNS-y/view?usp=sharing" target="_blank">Department Contact No's</a><br>
+							<!-- <a >Department Contact No's</a><button href="https://drive.google.com/file/d/1qtG-cRG63vJzYd0oDMK4lc51sTjcNS-y/view?usp=sharing" target="_blank" class="btn bg-primary mx-5"><i class="fa fa-download"></i> Download</button><br> -->
 							<a href="https://drive.google.com/file/d/19viIQ8IEY5HuxfooXg5NNW6lCEmusFsx/view?usp=sharing" target="_blank">Corporators Contact No's</a><br>
 							<a href="https://drive.google.com/file/d/19znNu-PeOBPiP1-PzaSUCqUwLx4E377G/view?usp=sharing" target="_blank">Department Head Email Id's</a><br>
 							<a href="https://drive.google.com/file/d/15qXbYSKL6dFjrfWpqCLvdkR4u6Lj1nTd/view?usp=sharing" target="_blank">Important Contact No's</a><br>
