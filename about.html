@@ -14,15 +14,39 @@
 		  	*{
 		  		margin: 0; padding: 0; font-family: 'Josefin Sans', Sans-serif;
 		  	}
+		   .bg {
+				  background-image: url('images/bg11.jpg');
+				  background-repeat: no-repeat;
+				  background-attachment: fixed; 
+				  background-size: 100% 100%;
+			}
 		
 		  </style>
 	    
 	</head>
 <body>
+	<script type="text/javascript">
+		function readmore() {
+		  var dots = document.getElementById("dots");
+		  var moreText = document.getElementById("more");
+		  var btnText = document.getElementById("myBtn");
+
+		  if (dots.style.display === "none") {
+		    dots.style.display = "inline";
+		    btnText.innerHTML = "Read more";
+		    moreText.style.display = "none";
+		  } else {
+		    dots.style.display = "none";
+		    btnText.innerHTML = "Read less";
+		    moreText.style.display = "inline";
+		  }
+		}
+
+	</script>
 
 	<!-- <h1 class=" text-center text-success text-capitalize font-weight-bold "> welcome to my channel</h1> -->
 
-	<!-- navbar start -->
+		<!-- navbar start -->
 		<header >
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary mb-5">
 			  <a class="navbar-brand" href="index.html">SMC</a>
@@ -62,32 +86,38 @@
 		</header>
 
 		<!-- navbar end -->
-		<div class="jumbotron jumbotron-fluid pt-5">
-		  <div class="container">
-		    <h1 class="pt-5">About Us Section</h1>
-		    <p>Bootstrap is the most popular HTML, CSS...</p>
+		<div class="jumbotron jumbotron-fluid pt-5 bg">
+		  <div class="container"><marquee>
+		    <h1 class="pt-5" style="color: green; font-style: italic;">About Us Section</h1>
+		    <p style="color: green;">Bootstrap is the most popular HTML, CSS...</p></marquee>
 		  </div>
-		  <!-- about us start -->
+		 	<!-- about us start -->
 			<section>
-				<div class="container-fluid">
+				<div class="container-fluid bg">
 					<h1 class="text-center text-capitalize pt-5">about us</h1>
 					<hr class="w-25 mx-auto pt-5">
 
 					<div class="row mb-5">
-						<div class="col-lg-6 col-md-6 col-12 ">
-							<img src="images/smc2.jpg" class="img-fluid img-thumbnail">
+						<div class="col-lg-6 col-md-6 col-12">
+							<img style="border-radius: 50%" src="images/smc2.jpg" class="img-fluid img-thumbnail">
 						</div>
 						<div class="col-lg-6 col-md-6 col-12">
 							<h1>Solapur Municipal Corporation</h1>
 							<hr>
-							<p>The Solapur Municipal Corporation is the governing body of the city of Solapur in the Indian state of Maharashtra. The municipal corporation consists of democratically elected members, is headed by a mayor and administers the city's infrastructure, public services and police. Members from the state's leading various political parties hold elected offices in the corporation. solapur municipality is one of the oldest in India founded in the 1860s and was given municipal corporation status in 1963. Solapur municipal corporation is located in Solapur.</p>
-							<!-- <button class="btn bg-primary text-white text-capitalize">know more</button> -->
-							<a href="https://drive.google.com/file/d/16CU7L_eqUnz7vFpYLCOlXU8HhTvNE6zi/view?usp=sharing" target="_blank">Know More...</a>
-						</div>	
+							<p>The Solapur Municipal Corporation is the governing body of the city of Solapur in the Indian state of Maharashtra. The municipal corporation consists of democratically elected members, is headed by a mayor and administers the city's infrastructure, public services and police. Members from the state's leading various political parties hold elected offices in the corporation. solapur municipality is one of the oldest in India founded in the 1860s and was given municipal corporation status in 1963. Solapur municipal corporation is located in Solapur<span id="dots">...</span> <span id="more" style="display: none;"> Solapur is Southern Maharashtra's one of the major city and Solapur District's administrative headquarter. The city is famous for textile manufacturing. In Bidi manufacturing the city is in
+							among top spot.The city is also famous for Solapur Chadars. 68 Shivlinga and Ashtavinayaks
+							founded by Shri Siddharameshwar an ancient inhabitant of Solapur city. They built the
+							Solapur lake in Solapur city and it resulted in resolved the water problem. The city is
+							established on the north-south railway root and the root is most important root in India.</span></p>
+							<button class="btn bg-primary text-white text-caitalize" onclick="readmore()" id="myBtn">Read More</button>
+							<!-- <a href="https://drive.google.com/file/d/16CU7L_eqUnz7vFpYLCOlXU8HhTvNE6zi/view?usp=sharing" target="_blank">Know More...</a> -->
+						</div>
+						
 					</div>
+					
 				</div>
 			</section>
-		<!-- about us end -->
+			<!-- about us end -->
 		</div>
 	
 <footer>

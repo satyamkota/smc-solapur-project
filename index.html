@@ -31,12 +31,61 @@
 	  	margin-left: -3px;
 	  	top: 0; 
 	  }
+	  body {
+		  background-image: url('images/bg11.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed; 
+		  background-size: 100% 100%;
+		}
+
+	  /*.design {
+		  font-size: 50pt;
+		  font-family: 'Luckiest Guy';
+		  color: #fff;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+		  text-shadow:   0px -6px 0 #212121,  
+		                 0px -6px 0 #212121,
+		                 0px  6px 0 #212121,
+		                 0px  6px 0 #212121,
+		                -6px  0px 0 #212121,  
+		                 6px  0px 0 #212121,
+		                -6px  0px 0 #212121,
+		                 6px  0px 0 #212121,
+		                -6px -6px 0 #212121,  
+		                 6px -6px 0 #212121,
+		                -6px  6px 0 #212121,
+		                 6px  6px 0 #212121,
+		                -6px  18px 0 #212121,
+		                 0px  18px 0 #212121,
+		                 6px  18px 0 #212121,
+		                 0 19px 1px rgba(0,0,0,.1),
+		                 0 0 6px rgba(0,0,0,.1),
+		                 0 6px 3px rgba(0,0,0,.3),
+		                 0 12px 6px rgba(0,0,0,.2),
+		                 0 18px 18px rgba(0,0,0,.25),
+		                 0 24px 24px rgba(0,0,0,.2),
+		                 0 36px 36px rgba(0,0,0,.15);
+		}*/
+		.fontdesign {
+			  font-size: calc(8px + 5vh);
+			  line-height: calc(20px + 20vh);
+			/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+			    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+			  color: #fccaff; */
+			  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+			    color: #fff6a9;
+			  font-family: "Sacramento", cursive;
+			  text-align: center;
+			  animation: blink 12s infinite;
+			  -webkit-animation: blink 12s infinite;
+			}
 	 
 	  </style>
     
 </head>
 <body style="background-color: #cccccc;">
-<!-- <body style="background-image: url(images/bg.jpg);"> -->
+
 	<script type="text/javascript">
 		function readmore() {
 		  var dots = document.getElementById("dots");
@@ -176,10 +225,10 @@
 		    
 		  </div>
 		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-		    <span class="carousel-control-prev-icon"></span>
+		    <span class="carousel-control-prev-icon bg-dark"></span>
 		  </a>
 		  <a class="carousel-control-next" href="#demo" data-slide="next">
-		    <span class="carousel-control-next-icon"></span>
+		    <span class="carousel-control-next-icon bg-dark"></span>
 		  </a>
 		</div>
 	</header>
@@ -187,7 +236,7 @@
 <!-- about us start -->
 	<section>
 		<div class="container-fluid">
-			<h1 class="text-center text-capitalize pt-5">about us</h1>
+			<h1 class="text-center text-capitalize pt-5 fontdesign" style="">about us</h1>
 			<hr class="w-25 mx-auto pt-5">
 
 			<div class="row mb-5">
@@ -215,7 +264,7 @@
 <!-- servise part start -->
 	<section>
 		<div class="container">
-			<h1 class="text-center text-capitalize pt-5">Services</h1>
+			<h1 class="text-center text-capitalize pt-5 fontdesign">Services</h1>
 			<hr class="w-25 mx-auto pt-5">
 			
 			<div class="row text-center mb-5">
@@ -225,7 +274,7 @@
 					  <div class="card-body">
 					    <h4 class="card-title">Complaint Registration</h4>
 					    <p class="card-text">Here you can register your complaints.</p>
-					    <a href="#" class="btn btn-primary">Click Here</a>
+					    <a href="http://www.solapurcorporation.gov.in/English/eng%20smc%20complaint.aspx" class="btn btn-primary">Click Here</a>
 					  </div>
 					</div>
 				</div>
@@ -236,7 +285,7 @@
 					  <div class="card-body">
 					    <h4 class="card-title">COVID-19 Information</h4>
 					    <p class="card-text">Click here to view information related to COVID-19.</p>
-					    <a href="#" class="btn btn-primary">Click Here</a>
+					    <a href="http://www.solapurcorporation.gov.in/English/eng%20corona.aspx" class="btn btn-primary">Click Here</a>
 					  </div>
 					</div>
 				</div>
@@ -247,7 +296,7 @@
 					  <div class="card-body">
 					    <h4 class="card-title">Hutatma Smruti Mandir Booking</h4>
 					    <p class="card-text">Click here to book Hutatma Smruti Mandir.</p>
-					    <a href="#" class="btn btn-primary">Click Here</a>
+					    <a href="https://hutatma.solapurcorporation.gov.in/" class="btn btn-primary">Click Here</a>
 					  </div>
 					</div>
 				</div>
@@ -269,7 +318,7 @@
 					  <div class="card-body">
 					    <h4 class="card-title">Building Permission</h4>
 					    <p class="card-text">Click here to view information related building premission.</p>
-					    <a href="#" class="btn btn-primary">Click Here</a>
+					    <a href="http://mahavastu.maharashtra.gov.in/" class="btn btn-primary">Click Here</a>
 					  </div>
 					</div>
 				</div>
@@ -302,11 +351,12 @@
 <!-- contact demo end -->
 <!-- gallery start -->
 <section>
+	
 	<div class="container">
-			<h1 class="text-center text-capitalize pt-5">gallery</h1>
+			<h1 class="text-center text-capitalize pt-5 fontdesign">gallery</h1>
 			<hr class="w-25 mx-auto pt-5">
-
-			<div class="row text-center">
+			<!-- <div class="container" style="height: 1111px; width: 1600px; overflow: auto; border-color: 2px red; border: 2px red; background-image: url(images/bg.jpg); "> -->
+			<div class="row text-center mt-5">
 
 				<div class="col-sm-3 col-sm-3 col-12 mb-4">
 					<img src="images/pk1a.jpg" class="img-fluid img-thumbnail">
@@ -617,12 +667,11 @@
 				<div class="col-sm-3 col-sm-3 col-12 mb-4">
 					<img src="images/pk26c.jpg" class="img-fluid img-thumbnail">
 				</div>
-				<!-- <div class="col-sm-3 col-sm-3 col-12 mb-4">
-					<img src="images/pk26d.jpg" class="img-fluid img-thumbnail">
-				</div> -->
+				
 				
 			
 			</div>
+			<!-- </div> -->
 </section>
 <!-- gallery end -->
 
@@ -632,8 +681,8 @@
 
 <!-- table start -->
 <section>
-		<div class="container">
-			<h1 class="text-center text-capitalize pt-5">Political Performance in Election 2017</h1>
+		<div class="container ">
+			<h1 class="text-center text-capitalize pt-5 fontdesign">Political Performance in Election 2017</h1>
 			<hr class="w-50 mx-auto pt-5">
 
 				<table class="sortable wikitable jquery-tablesorter container mb-5 table table-strriped table-bordered bg-body">
@@ -761,7 +810,7 @@
 
 <section>
 	<div class="container-fluid">
-		<h1 class="text-center text-capitalize pt-5">Contact us</h1>
+		<h1 class="text-center text-capitalize pt-5 fontdesign">Contact us</h1>
 			<hr class="w-25 mx-auto pt-5">
 			<hr class="color">
 			<!-- <hr class="w-100 border"> -->
@@ -769,7 +818,7 @@
 				<div class="row mx-5 container-fluid">
 					<div class="col-lg-6 col-md-6 col-12">
 						<p class="text-center">
-							<h3 class="text-center">VISIT US</h3>
+							<h3 class="text-center text-white" style="font-style: italic;">VISIT US</h3>
 							<hr class="w-25 mx-auto" >
 							Solapur Municipal Corporation,<br>
 							Indrabhuwan, Ambedkar Chowk, Railway Lines,<br>
@@ -779,7 +828,7 @@
 					</div>
 					<div class="col-lg-6 col-md-6 col-12 v1">
 						<p class="text-center">
-							<h3 class="text-center">CONTACT NUMBERS</h3>
+							<h3 class="text-center text-white text-shadow" style="font-style: italic;">CONTACT NUMBERS</h3>
 							<hr class="w-25 mx-auto">
 							<a href="https://drive.google.com/file/d/1qtG-cRG63vJzYd0oDMK4lc51sTjcNS-y/view?usp=sharing" target="_blank">Department Contact No's</a><br>
 							<!-- <a >Department Contact No's</a><button href="https://drive.google.com/file/d/1qtG-cRG63vJzYd0oDMK4lc51sTjcNS-y/view?usp=sharing" target="_blank" class="btn bg-primary mx-5"><i class="fa fa-download"></i> Download</button><br> -->
